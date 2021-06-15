@@ -1,0 +1,62 @@
+{
+    "Constant object destructuring": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "constdo",
+        "description": "Destructures an object into constant variables",
+        "body": "const { $2 } = ${1:obj};$0"
+    },
+    "Let object destructuring": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "letdo",
+        "description": "Destructures an object into let variables",
+        "body": "let { $2 } = ${1:obj};$0"
+    },
+    "Constant array destructuring": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "constda",
+        "description": "Destructures an array into constant variables",
+        "body": "const [$2] = ${1:arr};$0"
+    },
+    "Let array destructuring": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "letda",
+        "description": "Destructures an array into let variables",
+        "body": "let [$2] = ${1:arr};$0"
+    },
+    "Console variable": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "conv",
+        "description": "Prints the value of a variable with a label",
+        "body": "console.${1|log,info,warn,error|}(\"${3:${2:variable}}\", ${2});$0"
+    },
+    "Console": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "con",
+        "description": "Prints a log to the console",
+        "body": "console.${1|log,info,warn,error|}($2);$0"
+    },
+    "Console.log": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "clog",
+        "description": "Prints a log to the console using console.log",
+        "body": "console.log($1);$0"
+    },
+	"Console.info": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "cinfo",
+        "description": "Prints a log to the console using console.info",
+        "body": "console.info($1);$0"
+    },
+    "Console.warn": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "cwarn",
+        "description": "Prints a log to the console using console.warn",
+        "body": "console.warn($1);$0"
+    },
+    "Console.error": {
+        "scope": "javascript,javascriptreact,typescript,typescriptreact",
+        "prefix": "cerr",
+        "description": "Prints a log to the console using console.error",
+        "body": "console.error($1);$0"
+    },
+}
