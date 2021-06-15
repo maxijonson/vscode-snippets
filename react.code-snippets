@@ -1,0 +1,40 @@
+{
+    "React.useState": {
+        "scope": "typescriptreact, javascriptreact",
+        "prefix": "RS",
+        "description": "React useState hook",
+        "body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = React.useState(${2:value});$0"
+    },
+    "React.useMemo": {
+        "scope": "typescriptreact, javascriptreact",
+        "prefix": "RM",
+        "description": "React useMemo hook",
+        "body": [
+            "const ${1:memo} = React.useMemo(() => ${2:{",
+            "\t$0",
+            "\\}}, []);"
+        ]
+    },
+    "React.useCallback": {
+        "scope": "typescriptreact, javascriptreact",
+        "prefix": "RC",
+        "description": "React useCallback hook",
+        "body": [
+            "const ${1:callback} = React.useCallback((${2:params}) => ${3:{",
+            "\t$0",
+            "\\}}, []);"
+        ]
+    },
+    "React.useEffect": {
+        "scope": "typescriptreact, javascriptreact",
+        "prefix": "RE",
+        "description": "React useEffect hook",
+        "body": ["React.useEffect(() => {", "\t$0", "}, []);"]
+    },
+    "React.useLayoutEffect": {
+        "scope": "typescriptreact, javascriptreact",
+        "prefix": "RL",
+        "description": "React useLayoutEffect hook",
+        "body": ["React.useLayoutEffect(() => {", "\t$0", "}, []);"]
+    }
+}
