@@ -1,12 +1,12 @@
 {
     "React.useState": {
-        "scope": "typescriptreact, javascriptreact",
+        "scope": "typescript, typescriptreact, javascriptreact, javascript",
         "prefix": "RS",
         "description": "React useState hook",
         "body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = React.useState(${2:value});$0"
     },
     "React.useMemo": {
-        "scope": "typescriptreact, javascriptreact",
+        "scope": "typescript, typescriptreact, javascriptreact, javascript",
         "prefix": "RM",
         "description": "React useMemo hook",
         "body": [
@@ -16,7 +16,7 @@
         ]
     },
     "React.useCallback": {
-        "scope": "typescriptreact, javascriptreact",
+        "scope": "typescript, typescriptreact, javascriptreact, javascript",
         "prefix": "RC",
         "description": "React useCallback hook",
         "body": [
@@ -26,15 +26,21 @@
         ]
     },
     "React.useEffect": {
-        "scope": "typescriptreact, javascriptreact",
+        "scope": "typescript, typescriptreact, javascriptreact, javascript",
         "prefix": "RE",
         "description": "React useEffect hook",
         "body": ["React.useEffect(() => {", "\t$0", "}, []);"]
     },
     "React.useLayoutEffect": {
-        "scope": "typescriptreact, javascriptreact",
+        "scope": "typescript, typescriptreact, javascriptreact, javascript",
         "prefix": "RL",
         "description": "React useLayoutEffect hook",
         "body": ["React.useLayoutEffect(() => {", "\t$0", "}, []);"]
+    },
+    "React.useRef": {
+        "scope": "typescript, typescriptreact, javascriptreact, javascript",
+        "prefix": "RR",
+        "description": "React useRef hook",
+        "body": "const ${1:ref} = React.useRef<${2:HTMLElement}>(${3:null});$0"
     }
 }

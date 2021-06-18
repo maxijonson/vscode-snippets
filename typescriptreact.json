@@ -1,7 +1,0 @@
-{
-	"React.useRef": {
-        "prefix": "RR",
-        "description": "React useRef hook",
-        "body": "const ${1:ref} = React.useRef<${2:HTMLElement}>(${3:null});$0"
-    }
-}
