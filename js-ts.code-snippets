@@ -59,4 +59,22 @@
         "description": "Prints a log to the console using console.error",
         "body": "console.error($1);$0"
     },
+    "Import Default": {
+        "scope": "typescript,typescriptreact,javascriptreact,javascript",
+        "prefix": "impd",
+        "description": "Generates an import statement for a default export",
+        "body": "import ${2:${1:lib}} from \"${1:lib}\";$0"
+    },
+    "Import Named": {
+        "scope": "typescript,typescriptreact,javascriptreact,javascript",
+        "prefix": "impe",
+        "description": "Generates an import statement for named exports",
+        "body": "import { $2 } from \"${1:lib}\";$0"
+    },
+    "Import All": {
+        "scope": "typescript,typescriptreact,javascriptreact,javascript",
+        "prefix": "impa",
+        "description": "Generates an import statement for all exports",
+        "body": "import * as ${2:${1:lib}} from \"${1:lib}\";$0"
+    }
 }
