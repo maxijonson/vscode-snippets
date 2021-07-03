@@ -27,7 +27,7 @@
         "scope": "javascript,javascriptreact,typescript,typescriptreact",
         "prefix": "conv",
         "description": "Prints the value of a variable with a label",
-        "body": "console.${1|log,info,warn,error|}(\"${3:${2:variable}}\", ${2});$0"
+        "body": "console.${1|log,info,warn,error|}(\"${2}\", ${3:${2:variable}});$0"
     },
     "Console": {
         "scope": "javascript,javascriptreact,typescript,typescriptreact",
