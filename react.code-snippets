@@ -50,12 +50,12 @@
         "body": [
             "import React from \"react\";",
             "",
-            "interface ${TM_FILENAME_BASE}Props {",
+            "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props {",
             "\tchildren?: React.ReactNode;",
             "}",
             "",
-            "export default ({ children }: ${TM_FILENAME_BASE}Props) => {",
-            "\treturn ${0:<div>{children\\}</div>};",
+            "export default ({ children }: ${1:${TM_FILENAME_BASE}}Props) => {",
+            "\treturn ${2:<div>{children\\}</div>};$0",
             "};",
             ""
         ]
